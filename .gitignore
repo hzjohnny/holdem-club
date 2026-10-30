@@ -6,6 +6,7 @@
 !/Dockerfile
 !/render.yaml
 !/koyeb.yaml
+!/zeabur.yml
 !/DEPLOY.md
 !/.gitignore
 

@@ -1,0 +1,7 @@
+name: holdem-club
+services:
+  - name: holdem-club
+    dockerfile: ./Dockerfile
+    env:
+      NODE_ENV: production
+      WEB_DIST: /web/dist
