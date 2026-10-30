@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: holdem-club
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: WEB_DIST
+        value: /web/dist
+    healthCheckPath: /

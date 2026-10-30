@@ -1,0 +1,26 @@
+{
+  "name": "holdem-server",
+  "version": "0.1.0",
+  "description": "Colyseus server for No-Limit Texas Hold'em with bot filling.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@colyseus/core": "^0.15.0",
+    "@colyseus/schema": "^2.0.0",
+    "@colyseus/ws-transport": "^0.15.0",
+    "express": "^4.19.0",
+    "holdem-engine": "file:../holdem-engine"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^20.0.0",
+    "colyseus.js": "^0.15.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

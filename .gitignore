@@ -1,0 +1,14 @@
+# Ignore everything by default
+/*
+!/holdem-engine
+!/holdem-server
+!/holdem-web
+!/Dockerfile
+!/render.yaml
+!/DEPLOY.md
+!/.gitignore
+
+# Then ignore build artifacts inside the holdem projects
+**/node_modules/
+**/dist/
+**/*.log
