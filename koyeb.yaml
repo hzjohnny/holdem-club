@@ -1,0 +1,17 @@
+name: holdem-club
+services:
+  - name: holdem-club
+    type: web
+    env: docker
+    docker:
+      dockerfile: Dockerfile
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: WEB_DIST
+        value: /web/dist
+    routes:
+      - path: /
+    health_check:
+      grace_period_seconds: 60
+      interval_seconds: 30

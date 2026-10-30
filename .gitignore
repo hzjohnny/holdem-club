@@ -5,6 +5,7 @@
 !/holdem-web
 !/Dockerfile
 !/render.yaml
+!/koyeb.yaml
 !/DEPLOY.md
 !/.gitignore
 
